@@ -1,9 +1,11 @@
-let container = document.querySelector(".container");
-
-for(let i=0; i<256; i++) {
-  const cell = document.createElement("div");
-  cell.classList.toggle("cell")
-  container.appendChild(cell);
+function resizeGrid(numberOfCells) {
+  let container = document.querySelector(".container");
+  container.replaceChildren();
+  for(let i=0; i<numberOfCells*numberOfCells; i++) {
+    const cell = document.createElement("div");
+    cell.classList.toggle("cell")
+    container.appendChild(cell);
+  }
 }
 
 let cell = document.querySelectorAll(".cell");

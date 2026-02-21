@@ -24,3 +24,13 @@ function getUserCellsInput() {
   }
   return numberOfCells;
 }
+
+resizeGrid(16);
+addHoverEffect();
+
+let btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+  let numberOfCells = getUserCellsInput();
+  resizeGrid(numberOfCells);
+  addHoverEffect();
+});

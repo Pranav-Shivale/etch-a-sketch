@@ -8,9 +8,11 @@ function resizeGrid(numberOfCells) {
   }
 }
 
-let cell = document.querySelectorAll(".cell");
-cell.forEach(elem => {
-  elem.addEventListener("mouseenter", () => {
-    elem.style.backgroundColor = "aqua";
+function addHoverEffect() {
+  let cell = document.querySelectorAll(".cell");
+  cell.forEach(elem => {
+    elem.addEventListener("mouseenter", () => {
+      elem.style.backgroundColor = "aqua";
+    });
   });
-});
+}

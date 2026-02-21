@@ -3,7 +3,7 @@ function resizeGrid(numberOfCells) {
   container.replaceChildren();
   for(let i=0; i<numberOfCells*numberOfCells; i++) {
     const cell = document.createElement("div");
-    cell.classList.toggle("cell")
+    cell.classList.toggle("cell");
     const cellSize = 800/numberOfCells;
     cell.style.height = cellSize + "px";
     cell.style.width = cellSize + "px";

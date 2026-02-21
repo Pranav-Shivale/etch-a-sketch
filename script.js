@@ -16,3 +16,11 @@ function addHoverEffect() {
     });
   });
 }
+
+function getUserCellsInput() {
+  let numberOfCells = +prompt("Enter number of cells (less than 100): ");
+  while(numberOfCells > 100) {
+    numberOfCells = +prompt("Enter number of cells (less than 100): ");
+  }
+  return numberOfCells;
+}

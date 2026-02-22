@@ -11,11 +11,20 @@ function resizeGrid(numberOfCells) {
   }
 }
 
+function getRandomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
 function addHoverEffect() {
   let cell = document.querySelectorAll(".cell");
   cell.forEach(elem => {
     elem.addEventListener("mouseenter", () => {
-      elem.style.backgroundColor = "aqua";
+      const color = getRandomColor();
+      elem.style.backgroundColor = color;
     });
   });
 }

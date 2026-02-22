@@ -46,3 +46,11 @@ resizeBtn.addEventListener("click", () => {
   resizeGrid(numberOfCells);
   addHoverEffect();
 });
+
+let clearBtn = document.querySelector(".clearBtn");
+clearBtn.addEventListener("click", () => {
+  let cell = document.querySelectorAll(".cell");
+  cell.forEach(elem => {
+    elem.style.backgroundColor = "white";
+  });
+});

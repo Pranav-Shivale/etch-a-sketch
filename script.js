@@ -40,7 +40,7 @@ function getUserCellsInput() {
 resizeGrid(16);
 addHoverEffect();
 
-let btn = document.querySelector(".btn");
+let btn = document.querySelector(".resizeBtn");
 btn.addEventListener("click", () => {
   let numberOfCells = getUserCellsInput();
   resizeGrid(numberOfCells);
